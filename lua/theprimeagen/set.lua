@@ -32,7 +32,7 @@ vim.opt.colorcolumn = "80"
 
 --coustome vim stuff
 vim.opt.completeopt = { "menuone", "noselect" }
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard= "unnamedplus"
 vim.opt.conceallevel = 0
 vim.opt.ignorecase=true
 vim.opt. mouse = "a"
