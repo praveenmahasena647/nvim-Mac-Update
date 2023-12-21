@@ -38,6 +38,7 @@ vim.opt.ignorecase=true
 vim.opt. mouse = "a"
 vim.opt.pumheight = 10
 vim.opt.smartcase=true
+vim.opt.cursorline = true
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]

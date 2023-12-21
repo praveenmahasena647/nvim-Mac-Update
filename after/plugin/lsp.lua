@@ -13,6 +13,8 @@ lsp.ensure_installed({
     'emmet_ls',
     'stylelint_lsp',
     'tailwindcss',
+    'typst_lsp',
+    'templ',
 })
 
 -- Fix Undefined global 'vim'

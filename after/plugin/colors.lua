@@ -1,6 +1,32 @@
 require('rose-pine').setup({
     disable_background = true
 })
+require('fluoromachine').setup({
+  theme = 'retrowave',
+  transparent = 'full',
+      overrides = {
+       ['@type'] = { italic = true, bold = false },
+       ['@function'] = { italic = false, bold = false },
+       ['@comment'] = { italic = true },
+       ['@keyword'] = { italic = false },
+       ['@constant'] = { italic = false, bold = false },
+       ['@variable'] = { italic = true },
+       ['@field'] = { italic = true },
+       ['@parameter'] = { italic = true },
+   },
+   colors=function (_,d)
+       return{
+           bg = '#190920',
+           alt_bg = d('#190920', 20),
+           cyan = '#49eaff',
+           red = '#ff1e34',
+           yellow = '#ffe756',
+           orange = '#f38e21',
+           pink = '#ffadff',
+           purple = '#9544f7',
+       }
+   end
+})
 
 require("gruvbox").setup({
     terminal_colors = true, -- add neovim terminal colors
@@ -45,4 +71,5 @@ function ColorMyPencils(color)
 
 end
 
-ColorMyPencils("gruvbox")
+--ColorMyPencils("gruvbox")
+ColorMyPencils("fluoromachine")
